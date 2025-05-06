@@ -1,0 +1,28 @@
+# Ignore Python virtual environment folder
+venv/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+
+# Ignore environment variable files (if any)
+.env
+
+# Ignore log files (if any)
+*.log
+
+# Ignore any IDE/editor-specific files
+.vscode/
+.idea/
+
+# Ignore system files like macOS and Windows specific files
+.DS_Store        # macOS system file
+Thumbs.db         # Windows system file
+
+# Ignore package distribution files
+*.egg-info/
+dist/
+build/
+
+# Ignore database files (if using SQLite or similar)
+*.sqlite3
