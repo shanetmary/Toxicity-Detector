@@ -17,7 +17,7 @@ def check_toxicity():
 
     # If the sentence is toxic, return a message
     if result[0]['label'] == 'toxic' and result[0]['score'] > 0.8:
-        return jsonify({"is_toxic": True, "message": "Be respectful! This is against our policies."}), 200
+        return jsonify({"is_toxic": True, "reason": "this message is flagged by AI due to offensive content."}), 200
 
     # If the sentence is clean, return the original message
     return jsonify({"is_toxic": False, "message": user_message}), 200

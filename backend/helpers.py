@@ -11,7 +11,7 @@ def check_toxicity(user_message):
 
     # If the sentence is toxic and the confidence is above 0.8, return a warning
     if result[0]['label'] == 'toxic' and result[0]['score'] > 0.8:
-        return {"is_toxic": True, "message": "Be respectful! This is against our policies."}
+        return {"is_toxic": True, "reason": "this message is flagged by AI due to offensive content."}
 
     # Otherwise, return the original message
     return {"is_toxic": False, "message": user_message}
